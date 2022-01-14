@@ -2,9 +2,7 @@
 
 if [[ $TRAVIS_OS_NAME = 'osx' ]]; then
 	if [[ $TRAVIS_JOB_NAME = 'WebAssembly' ]]; then
-    	if [ $RUN_TESTS == "YES" ]; then
-			carton test
-		fi
+    	carton test
   	else
 	  echo "project = $PROJECT, DESTINATION = $DESTINATION"
 		set -o pipefail
