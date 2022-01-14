@@ -26,8 +26,7 @@ jobs:
     osx_image: xcode11.2
     env: DESTINATION="arch=x86_64"SCHEME="$OSX_SCHEME"     SDK="$OSX_SDK"     RUN_TESTS="YES" POD_LINT="NO"
   - name: WebAssembly
-    os: osx
-    osx_image: xcode13.2
+    os: linux
 before_install:
   - ./travis/before_install.sh
 script:
