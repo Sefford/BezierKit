@@ -4,8 +4,6 @@ if [[ $TRAVIS_OS_NAME = 'osx' ]]; then
 	if [[ $TRAVIS_JOB_NAME = 'WebAssembly' ]]; then
     	if [ $RUN_TESTS == "YES" ]; then
 			carton test
-		else
-			carton bundle
 		fi
   	else
 	  echo "project = $PROJECT, DESTINATION = $DESTINATION"
