@@ -316,7 +316,6 @@ internal class Utils {
                                       _ results: inout [Intersection],
                                       _ accuracy: CGFloat,
                                       _ totalIterations: inout Int) -> Bool {
-
         let maximumIterations = 900
         let maximumIntersections = c1.curve.order * c2.curve.order
 
