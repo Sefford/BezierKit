@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $TRAVIS_OS_NAME = 'osx' ]]; then
-  if [[ $TRAVIS_JOB_NAME = 'WebAssembly']]; then
+  if [[ $TRAVIS_JOB_NAME = 'WebAssembly' ]]; then
     brew install swiftwasm/tap/carton
   fi
 elif [[ $TRAVIS_OS_NAME = 'linux' ]]; then
